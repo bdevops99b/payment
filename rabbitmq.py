@@ -34,7 +34,7 @@ class Publisher:
                                     body=json.dumps(msg).encode())
         self._logger.info('message sent')
 
-    #Publish msg, reconnecting if necessary.
+    #Publish msg,  reconnecting if necessary.
     def publish(self, msg, headers):
         if self._channel is None or self._channel.is_closed or self._conn is None or self._conn.is_closed:
             self._connect()
