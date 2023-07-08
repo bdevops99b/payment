@@ -14,7 +14,7 @@ from flask import Response
 from flask import request
 from flask import jsonify
 from rabbitmq import Publisher
-# Prometheus
+# Prometheuss
 import prometheus_client
 from prometheus_client import Counter, Histogram
 
